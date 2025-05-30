@@ -10,7 +10,7 @@ export default async function Home() {
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen fixed inset-0 bg-[url('/bg.jpg')] bg-cover bg-center p-4">
-      <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md text-center z-10">
+      <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-lg text-center z-10">
         <h1 className="md:text-3xl text-sm font-bold text-gray-800 mb-8">
           Welcome&nbsp;to&nbsp;your&nbsp;dashboard
         </h1>
