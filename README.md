@@ -1,10 +1,6 @@
-# JWT-Authentication-Nextjs
+# User auth app
 
 This repository hosts the source code for a user authentication platform built with Next.js, MongoDB, JWT, Bcrypt and Tailwind CSS. The application features user registration and login, utilizing JWT for secure authentication, along with a responsive UI built with Shadcn components.
-
-## Demo
-
-- Live Preview: [https://jwt-authentication-nextjs.vercel.app/](https://jwt-authentication-nextjs.vercel.app/)
 
 ## Features
 
@@ -31,12 +27,12 @@ This repository hosts the source code for a user authentication platform built w
 Clone the project
 
 ```bash
-   https://github.com/Mshandev/JWT-Authentication-Nextjs.git
+   https://github.com/ishimwemx/user-auth-app.git
 ```
 Go to the project directory
 
 ```bash
-    cd JWT-Authentication-Nextjs
+    cd user-auth-app
 ```
 Install dependencies
 
@@ -47,7 +43,7 @@ Install dependencies
 Setup Environment Vaiables
 
 ```Make .env file in "root" folder and store environment Variables
-  JWT_SECRET=YOUR_KEY
+  JWT_SECRET = YOUR_KEY
   MONGO_URI = YOUR-MONGO-URL
  ```
 
@@ -74,6 +70,4 @@ The application is deployed on Vercel.
 Contributions are always welcome!
 Just raise an issue, and we will discuss it.
 
-## Feedback
 
-If you have any feedback, please reach out to me [here](https://www.linkedin.com/in/muhammad-shan-full-stack-developer/)
