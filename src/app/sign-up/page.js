@@ -53,7 +53,7 @@ function SignUp() {
           ))}
           <Button
             disabled={!handleSignUpBtnValid()}
-            className="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-200 disabled:opacity-50"
+            className="w-full py-2 bg-[#2b616c] text-white rounded-md hover:bg-[#398fa0]  transition duration-200 disabled:opacity-50"
             type="submit"
           >
             Sign Up
@@ -63,7 +63,7 @@ function SignUp() {
           <p className="text-gray-600">Already have an account?</p>
           <Button
             onClick={() => router.push("/sign-in")} // Redirect to Sign In page
-            className="w-full mt-2 py-2 bg-red-500 text-white rounded-md hover:bg-gray-400 transition duration-200"
+            className="w-full mt-2 py-2 bg-[#00a86b] text-white rounded-md hover:bg-[#48c99a] transition duration-200"
           >
             Sign In
           </Button>

@@ -46,7 +46,7 @@ function SignIn() {
           ))}
           <Button
             type="submit"
-            className="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-200"
+            className="w-full py-2 bg-[#00a86b] text-white rounded-md hover:bg-[#48c99a] transition duration-200"
           >
             Sign In
           </Button>
@@ -55,7 +55,7 @@ function SignIn() {
           <p className="text-gray-600">Don't have an account?</p>
           <Button
             onClick={() => router.push("/sign-up")}
-            className="w-full mt-2 py-2 bg-red-500 text-white rounded-md hover:bg-gray-400 transition duration-200"
+            className="w-full mt-2 py-2 bg-[#2b616c] text-white rounded-md hover:bg-[#398fa0] transition duration-200"
           >
             Sign Up
           </Button>
