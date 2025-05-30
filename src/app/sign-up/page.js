@@ -32,7 +32,7 @@ function SignUp() {
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Get Started
         </h1>
-        <form onSubmit={handleSignUp} className="space-y-4">
+        <form onSubmit={handleSignUp} className="space-y-4 mb-4">
           {userRegistrationFormControls.map((controlItem) => (
             <div key={controlItem.name}>
               <Label className="block text-gray-600 mb-2">
@@ -56,7 +56,7 @@ function SignUp() {
 
           <Button
             disabled={!handleSignUpBtnValid()}
-            className="w-full py-2 bg-[#2b616c] text-white rounded-md hover:bg-[#398fa0]  transition duration-200 disabled:opacity-50 mb-4"
+            className="w-full py-2 bg-[#2b616c] text-white rounded-md hover:bg-[#398fa0]  transition duration-200 disabled:opacity-50"
             type="submit"
           >
             Sign Up
