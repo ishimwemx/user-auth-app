@@ -36,8 +36,8 @@ Setup Environment Vaiables
   MONGO_URI = YOUR-MONGO-URL
  ```
 
-JWT_SECRET you can use whichever one of your liking
-For MONGO_URI you can use this one which is already deployed: mongodb+srv://ishimwe:1nt3rv13w@user-auth.irihw62.mongodb.net/?retryWrites=true&w=majority&appName=user-auth
+- JWT_SECRET you can use whichever one of your liking
+- For MONGO_URI you can use this one which is already deployed: mongodb+srv://ishimwe:1nt3rv13w@user-auth.irihw62.mongodb.net/?retryWrites=true&w=majority&appName=user-auth
 
 Start the server
 
