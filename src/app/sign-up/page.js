@@ -27,7 +27,7 @@ function SignUp() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen fixed inset-0 bg-[url('../bg.jpg')] bg-cover bg-center blur-sm p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen fixed inset-0 bg-[url('/bg.jpg')] bg-cover bg-center blur-sm p-4">
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Register
@@ -35,7 +35,7 @@ function SignUp() {
         <form onSubmit={handleSignUp} className="space-y-4">
           {userRegistrationFormControls.map((controlItem) => (
             <div key={controlItem.name}>
-              <Label className="block text-gray-600 mb-1">
+              <Label className="block text-gray-600 mb-2">
                 {controlItem.label}
               </Label>
               <CommonFormElement
@@ -47,13 +47,16 @@ function SignUp() {
                     [event.target.name]: event.target.value,
                   })
                 }
-                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 border border-gray-300 rounded-md mb-4"
               />
             </div>
           ))}
+
+          <div className="mb-10"></div>
+
           <Button
             disabled={!handleSignUpBtnValid()}
-            className="w-full py-2 bg-[#2b616c] text-white rounded-md hover:bg-[#398fa0]  transition duration-200 disabled:opacity-50"
+            className="w-full py-2 bg-[#2b616c] text-white rounded-md hover:bg-[#398fa0]  transition duration-200 disabled:opacity-50 mb-4"
             type="submit"
           >
             Sign Up

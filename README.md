@@ -10,17 +10,6 @@ This repository hosts the source code for a user authentication platform built w
 - Seamless API calls made using Next.js server actions
 - Easy integration with MongoDB for data management
 - Store JWT Token in Cookie
-
-## Screenshots
-
-![Login](https://i.ibb.co/ZgmyxfG/authentication-1.png)
-- Login Page
-
-![Signup](https://i.ibb.co/197H0Qb/authentication-2.png)
-- Signup Page
-
-![Home](https://i.ibb.co/sKzSby1/authentication-4.png)
-- Home Page
   
 ## Run Locally
 
@@ -46,6 +35,9 @@ Setup Environment Vaiables
   JWT_SECRET = YOUR_KEY
   MONGO_URI = YOUR-MONGO-URL
  ```
+
+JWT_SECRET you can use whichever one of your liking
+For MONGO_URI you can use this one which is already deployed: mongodb+srv://ishimwe:1nt3rv13w@user-auth.irihw62.mongodb.net/?retryWrites=true&w=majority&appName=user-auth
 
 Start the server
 

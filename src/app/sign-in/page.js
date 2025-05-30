@@ -20,7 +20,7 @@ function SignIn() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen fixed inset-0 bg-[url('../bg.jpg')] bg-cover bg-center blur-sm p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen fixed inset-0 bg-[url('/bg.jpg')] bg-cover bg-center blur-sm p-4">
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Login
@@ -44,6 +44,9 @@ function SignIn() {
               />
             </div>
           ))}
+
+          <div className="mb-10"></div>
+
           <Button
             type="submit"
             className="w-full py-2 bg-[#00a86b] text-white rounded-md hover:bg-[#48c99a] transition duration-200"
