@@ -32,10 +32,10 @@ function SignUp() {
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Get Started ✍️
         </h1>
-        <form onSubmit={handleSignUp} className="space-y-8 mb-4">
+        <form onSubmit={handleSignUp} className="space-y-6 mb-2">
           {userRegistrationFormControls.map((controlItem) => (
             <div key={controlItem.name}>
-              <Label className="block text-gray-600 mb-2">
+              <Label className="block text-gray-600 mb-1">
                 {controlItem.label}
               </Label>
               <CommonFormElement
