@@ -30,7 +30,7 @@ function SignUp() {
     <div className="flex flex-col items-center justify-center min-h-screen fixed inset-0 bg-[url('/bg.jpg')] bg-cover bg-center p-4">
       <div className="bg-white/90 shadow-lg rounded-xl p-8 w-full max-w-md z-10">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
-          Get Started
+          Get Started ✍️
         </h1>
         <form onSubmit={handleSignUp} className="space-y-8 mb-4">
           {userRegistrationFormControls.map((controlItem) => (
@@ -52,7 +52,7 @@ function SignUp() {
             </div>
           ))}
 
-          <div className="mb-10"></div>
+          <div className="mb-6"></div>
 
           <Button
             disabled={!handleSignUpBtnValid()}

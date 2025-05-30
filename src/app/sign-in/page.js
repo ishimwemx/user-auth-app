@@ -21,9 +21,9 @@ function SignIn() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen fixed inset-0 bg-[url('/bg.jpg')] bg-cover bg-center p-4">
-      <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md z-10">
+      <div className="bg-white/90 shadow-lg rounded-lg p-8 w-full max-w-md z-10">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
-          Welcome back
+          Welcome Back
         </h1>
         <form onSubmit={handleSignIn} className="space-y-4">
           {userLoginFormControls.map((controlItem) => (
@@ -45,7 +45,7 @@ function SignIn() {
             </div>
           ))}
 
-          <div className="mb-10"></div>
+          <div className="mb-6"></div>
 
           <Button
             type="submit"
