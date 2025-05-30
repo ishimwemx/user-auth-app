@@ -2,21 +2,21 @@
 
 import { Label } from "@/components/ui/label";
 import { initialLoginFormData, userLoginFormControls } from "../utils";
-import CommonFormElement from "@/components/form-element/page";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { loginUserAction } from "@/actions";
 import { useRouter } from "next/navigation";
+import CommonFormElement from "@/components/form-element/page";
 
 function SignIn() {
   const [signInFormData, setSignInFormData] = useState(initialLoginFormData);
   const router = useRouter();
 
-  async function handleSignIn(event) {
-    event.preventDefault(); // Prevent the default form submission
+  const handleSignIn = async(event) => {
+    event.preventDefault();
     const result = await loginUserAction(signInFormData);
-    console.log(result);
-    if (result?.success) router.push("/"); // Redirect on successful login
+    
+    if (result?.success) router.push("/"); // Redirect to / after successful login
   }
 
   return (

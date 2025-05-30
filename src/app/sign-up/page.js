@@ -12,18 +12,13 @@ function SignUp() {
   const [signUpFormData, setSignUpFormData] = useState(initialSignUpFormData);
   const router = useRouter();
 
-  function handleSignUpBtnValid() {
-    return Object.keys(signUpFormData).every(
-      (key) => signUpFormData[key].trim() !== ""
-    );
-  }
+  const handleSignUpBtnValid = () => Object.keys(signUpFormData).every((key) => signUpFormData[key].trim() !== "");
 
-  async function handleSignUp(event) {
-    event.preventDefault(); // Prevent default form submission
+  const handleSignUp = async(event) => {
+    event.preventDefault(); 
     const result = await registerUserAction(signUpFormData);
-    console.log(result);
 
-    if (result?.data) router.push("/sign-in"); // Redirect to sign-in page on success
+    if (result?.data) router.push("/sign-in"); // Redirect to sign-in page on after sign up
   }
 
   return (
