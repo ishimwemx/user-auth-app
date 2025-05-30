@@ -27,8 +27,7 @@ function SignUp() {
   }
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen fixed inset-0 bg-cover bg-center p-4 overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/bg.jpg')] bg-cover bg-center backdrop-blur-sm -z-10"></div>
+    <div className="flex flex-col items-center justify-center min-h-screen fixed inset-0 bg-[url('/bg.jpg')] bg-cover bg-center p-4">
       <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md z-10">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Get Started
